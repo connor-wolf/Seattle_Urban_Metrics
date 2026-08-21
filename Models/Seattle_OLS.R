@@ -205,7 +205,7 @@ model3 <- lm(log_rentsqrft ~
 
 summary(model3)
 
-# vif test to investigate potential multicolinaory 
+# vif test to investigate potential multicolinearity 
 vif(model3)
 
 # model 4
