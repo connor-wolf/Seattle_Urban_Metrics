@@ -20,8 +20,8 @@ source("Seattle_Data.R")
 view(R_tracts) 
 
 ###### CORRELATION TESTS----
-# Before continuing to OLS model devlopment it is impotant to understand 
-# the correlation between potential explitory vraibles and log apartmnet rent. 
+# Before continuing to OLS model development it is important to understand 
+# the correlation between potential explanatory variables and log apartment rent. 
 
 # 1. Community Reporting Area Vacancy Rate
 cor.test(
@@ -194,7 +194,7 @@ summary(model2)
 
 # model 3
 # Breaking apart the walkability index to see if any of
-# its components HAVE A CAUSL RELATIONSHIP with log apartment rent 
+# its components have a statistically significant relationship with log apartment rent 
 
 model3 <- lm(log_rentsqrft ~
                D2a_EpHHm
@@ -224,7 +224,7 @@ model4 <- lm(log_rentsqrft ~
 
 summary(model4)
 
-# vif test to investigate potential multicolinaity 
+# vif test to investigate potential multicolinearity
 vif(model4)
 
 
